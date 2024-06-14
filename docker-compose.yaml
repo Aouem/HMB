@@ -33,7 +33,7 @@ services:
   frontend:
     image: sipacademy2024/clinivia_frontend:latest
     ports:
-      - "91:80" 
+      - "1983:80" 
     depends_on:
       - webapi
     networks:
