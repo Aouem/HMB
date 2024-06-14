@@ -15,7 +15,7 @@ services:
     image: adminer
     restart: always
     ports:
-      - "8081:8080" 
+      - "8082:8080" 
     networks:
       - clinivia-network  
 
@@ -33,7 +33,7 @@ services:
   frontend:
     image: sipacademy2024/clinivia_frontend:latest
     ports:
-      - "1983:80" 
+      - "91:80" 
     depends_on:
       - webapi
     networks:
